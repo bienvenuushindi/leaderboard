@@ -10,11 +10,14 @@
       <h1 class="f-size-h2 my-5">Leader Board</h1>
   </header>
   <main>
+      <div class="container d-none btn-success">
+          <p id="feedback" class="row text-center">Leaderboard score created correctly. PLease Click Refresh to see the latest entry</p>
+      </div>
       <section class="container d-flex-lg gap-4-lg">
           <div class="left-block">
               <div class="heading d-flex-lg justify-content-between-lg">
                   <h3 class="f-size-h3">Recent Score</h3>
-                  <button type="button" class="btn btn-success">Refresh</button>
+                  <button type="button" class="btn btn-success" id="refresh-btn">Refresh</button>
               </div>
               <table class="table row">
                   <tbody id="table-body">
@@ -30,7 +33,7 @@
                   <h3 class="f-size-h3">Add your score</h3>
               </div>
               <div class="form-container">
-                  <form action="#" method="post">
+                  <form action="#" method="post" id="score-form">
                      <div class="form-group">
                          <label for="name"></label>
                          <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required>

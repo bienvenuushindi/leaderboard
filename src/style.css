@@ -43,6 +43,24 @@ input:focus {
   background-color: #1fae51;
 }
 
+.error {
+  background-color: #8b0000;
+}
+
+#feedback{
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: #ececec;
+  font-weight: bold;
+}
+
+.d-none{
+  display: none;
+}
+.text-center{
+  text-align: center;
+}
+
 .text-end {
   text-align: end;
 }
