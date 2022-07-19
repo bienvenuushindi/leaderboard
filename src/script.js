@@ -1,7 +1,7 @@
 import './style.css';
-import { formElmt, refreshButton } from './modules/elements';
-import addScore from './modules/api/add-score';
-import listScore from './modules/api/list-scores';
+import { formElmt, refreshButton } from './modules/elements.js';
+import addScore from './modules/api/add-score.js';
+import listScore from './modules/api/list-scores.js';
 
 listScore();
 formElmt.addEventListener('submit', (ev) => {

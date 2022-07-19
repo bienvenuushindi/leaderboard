@@ -47,17 +47,18 @@ input:focus {
   background-color: #8b0000;
 }
 
-#feedback{
+#feedback {
   padding: 0.5rem 1rem;
   border-radius: 0.2rem;
   color: #ececec;
   font-weight: bold;
 }
 
-.d-none{
+.d-none {
   display: none;
 }
-.text-center{
+
+.text-center {
   text-align: center;
 }
 
