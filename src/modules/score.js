@@ -1,5 +1,5 @@
 export default class Score {
-  constructor({name, score}) {
+  constructor({ name, score }) {
     this.name = name;
     this.score = score;
   }
@@ -11,6 +11,4 @@ export default class Score {
   getScore() {
     return this.score;
   }
-
-
 }
