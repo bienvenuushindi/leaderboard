@@ -1,0 +1,1 @@
+export const tableBody=document.getElementById('table-body');
