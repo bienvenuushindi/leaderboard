@@ -7,16 +7,16 @@
 </head>
 <body>
   <header>
-      <h1>Leader Board</h1>
+      <h1 class="f-size-h2 my-5">Leader Board</h1>
   </header>
   <mai>
-      <section class="container">
+      <section class="container d-flex-lg gap-4-lg">
           <div class="left-block">
-              <div class="heading">
-                  <h3>Recent Score</h3>
-                  <button>Refresh</button>
+              <div class="heading d-flex-lg justify-content-between-lg">
+                  <h3 class="f-size-h3">Recent Score</h3>
+                  <button type="button" class="btn btn-success">Refresh</button>
               </div>
-              <table class="table">
+              <table class="table row">
                   <tbody class="table-body">
                      <tr>
                          <td>Name:</td>
@@ -27,20 +27,20 @@
           </div>
           <div class="right-block">
               <div class="heading">
-                  <h3>Add your score</h3>
+                  <h3 class="f-size-h3">Add your score</h3>
               </div>
               <div class="form-container">
                   <form action="#" method="post">
                      <div class="form-group">
                          <label for="name"></label>
-                         <input type="text" name="name" id="name" placeholder="Your Name" class="form-control">
+                         <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required>
                      </div>
                       <div class="form-group">
                           <label for="score"></label>
-                          <input type="text" name="score" id="score" placeholder="Your Score" class="form-control">
+                          <input type="number" name="score" id="score" placeholder="Your Score" class="form-control" required>
                       </div>
-                     <div class="form-group">
-                         <button type="submit" class="btn ">Submit</button>
+                     <div class="form-group text-end">
+                         <button type="submit" class="btn btn-primary">Submit</button>
                      </div>
                   </form>
               </div>
