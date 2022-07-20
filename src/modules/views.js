@@ -5,20 +5,20 @@ export const showOnSuccess = () => {
   feedbackMessageBlock.parentElement.classList.remove('d-none');
   setTimeout(() => {
     feedbackMessageBlock.parentElement.classList.add('d-none');
-  }, 7000);
+  }, 5000);
 };
 
 export const showOnError = () => {
   feedbackMessageBlock.parentElement.classList.remove('d-none');
-  feedbackMessageBlock.classList.remove('btn-success');
+  feedbackMessageBlock.classList.remove('success');
   feedbackMessageBlock.classList.add('error');
   feedbackMessageBlock.innerHTML = 'Ooooops!!! Something went wrong';
   setTimeout(() => {
     feedbackMessageBlock.parentElement.classList.add('d-none');
-    feedbackMessageBlock.classList.add('btn-success');
+    feedbackMessageBlock.classList.add('success');
     feedbackMessageBlock.classList.remove('error');
     feedbackMessageBlock.innerHTML = 'Leaderboard score created correctly. PLease Click Refresh to see the latest entry';
-  }, 10000);
+  }, 7000);
 };
 
 const updateTableView = (data) => {

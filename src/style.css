@@ -40,11 +40,15 @@ input:focus {
 }
 
 .btn-success {
-  background-color: #1fae51;
+  background-color: rgb(31, 174, 81);
 }
 
 .error {
   background-color: #8b0000;
+}
+
+.success {
+  background-color: rgba(31, 174, 81, 0.71);
 }
 
 #feedback {
