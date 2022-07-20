@@ -22,8 +22,10 @@ export const showOnError = () => {
 };
 
 const updateTableView = (data) => {
-  tableBody.innerHTML = data.map((item) => `  <tr>
-                         <td>${capitalizeString(item.user)} : ${item.score}</td>
+  data.sort((a, b) => b.score - a.score);
+  tableBody.innerHTML = data.map((item) => `<tr>
+                         <td>${capitalizeString(item.user)}</td>
+                         <td>${item.score}</td>
                      </tr>`).join('');
 };
 export default updateTableView;
