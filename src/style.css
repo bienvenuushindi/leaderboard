@@ -101,7 +101,6 @@ tr > td:nth-child(even) {
   background-color: rgba(31, 174, 81, 0.6);
   color: #fff;
   font-weight: bolder;
-
 }
 
 tr > td:nth-child(odd) {
