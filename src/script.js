@@ -1,8 +1,23 @@
 import './style.css';
-import tableBody from './modules/elements.js';
-import generateDefaultData from './modules/data-list.js';
-import capitalizeString from './modules/capitalize-string.js';
+import { formElmt, refreshButton } from './modules/elements.js';
+import addScore from './modules/api/add-score.js';
+import listScore from './modules/api/list-scores.js';
+import updateTableView, { showOnError, showOnSuccess } from './modules/views.js';
 
-tableBody.innerHTML = generateDefaultData(7, [1, 150]).map((item) => `  <tr>
-                         <td>${capitalizeString(item.getName())} : ${item.getScore()}</td>
-                     </tr>`).join('');
+listScore().then((data) => updateTableView(data.result));
+formElmt.addEventListener('submit', (ev) => {
+  ev.preventDefault();
+  const name = formElmt.name.value;
+  const score = formElmt.score.value;
+  addScore(name, score).then(() => {
+    showOnSuccess();
+    formElmt.name.value = '';
+    formElmt.score.value = '';
+  }).catch(() => {
+    showOnError();
+  });
+});
+
+refreshButton.addEventListener('click', () => {
+  listScore().then((data) => updateTableView(data.result));
+});

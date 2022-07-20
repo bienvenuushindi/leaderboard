@@ -40,7 +40,30 @@ input:focus {
 }
 
 .btn-success {
-  background-color: #1fae51;
+  background-color: rgb(31, 174, 81);
+}
+
+.error {
+  background-color: #8b0000;
+}
+
+.success {
+  background-color: rgba(31, 174, 81, 0.71);
+}
+
+#feedback {
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  color: #ececec;
+  font-weight: bold;
+}
+
+.d-none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-end {
