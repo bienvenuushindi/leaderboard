@@ -87,13 +87,16 @@ input:focus {
   font-size: 3rem;
 }
 
+table {
+  border-radius: 5px;
+  border: 1px solid #6e6e6e;
+}
+
 tr > td {
   padding: 0.5rem 0.5rem;
   font-weight: bold;
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
-  border: 1px solid #fff;
-  border-radius: 5px;
   font-size: 1.1rem;
 }
 
@@ -101,6 +104,7 @@ tr > td:nth-child(even) {
   background-color: rgba(31, 174, 81, 0.6);
   color: #fff;
   font-weight: bolder;
+  text-align: end;
 }
 
 tr > td:nth-child(odd) {
@@ -108,7 +112,8 @@ tr > td:nth-child(odd) {
 }
 
 tr:nth-child(even) {
-  background-color: rgba(139, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
 }
 
 @media screen and (min-width: 768px) {
