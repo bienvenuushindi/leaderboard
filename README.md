@@ -9,7 +9,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Live Demo 
 
-[Live Demo Link](https://bienvenuushindi.github.io/leaderboard/dist/index.html)
+[Live Demo Link](https://bienvenuushindi.github.io/leaderboard/)
 
 ## Getting Started
 To get a local copy of this exercice, Please follow these simple example steps.
