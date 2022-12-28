@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npm run watch && npm run start",
     "start": "webpack-dev-server --progress ",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "predeploy": "npm run build",
+    "deploy": "./node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,15 @@
   "bugs": {
     "url": "https://github.com/bienvenuushindi/leaderboard/issues"
   },
-  "homepage": "https://github.com/bienvenuushindi/leaderboard#readme",
+  "homepage": "https://bienvenuushindi.github.io/leaderboard/",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
+    "hint": "^7.0.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
@@ -30,11 +38,6 @@
     "stylelint-scss": "^3.21.0",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.9.3",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.26.0",
-    "hint": "^7.0.1"
+    "webpack-dev-server": "^4.9.3"
   }
 }
