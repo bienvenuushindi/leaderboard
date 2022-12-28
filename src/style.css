@@ -137,5 +137,6 @@ tr:nth-child(even) {
   .left-block,
   .right-block {
     flex-grow: 1;
+    margin-left: 5px;
   }
 }
