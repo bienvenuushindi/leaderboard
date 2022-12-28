@@ -8,7 +8,7 @@
     "serve": "npm run watch && npm run start",
     "start": "webpack-dev-server --progress ",
     "watch": "webpack -w",
-    "deploy": "./node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
