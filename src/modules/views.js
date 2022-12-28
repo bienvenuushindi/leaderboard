@@ -18,7 +18,7 @@ export const showOnError = () => {
     feedbackMessageBlock.classList.add('success');
     feedbackMessageBlock.classList.remove('error');
     feedbackMessageBlock.innerHTML = 'Leaderboard score created correctly. PLease Click Refresh to see the latest entry';
-  }, 7000);
+  }, 6000);
 };
 
 const updateTableView = (data) => {
